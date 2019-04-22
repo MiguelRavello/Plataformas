@@ -2,7 +2,7 @@ function validar() {
     var name, lastname, email, fono;
     var expLetras, expNumero, expCorreo;
     expLetras = /^[a-zA-Z]+(\s+[a-zA-Z]+)*$/;
-    expNumero = /^\d{6,9}$/;
+    expNumero = /^\d{6}$|^\d{9}$/;
     expCorreo = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$/;
 
     name = document.getElementById("nombre").value;
@@ -32,10 +32,10 @@ function validar() {
         alert("Correo no valido");
         return false;
     }
-    else if(fono.length>9){
+    /*else if(fono.length>9){
         alert("Numero muy grande");
         return false;
-    }
+    }*/
     else if(!expNumero.test(fono)){
         alert("Telefono no valido");
         return false;
