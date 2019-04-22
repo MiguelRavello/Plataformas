@@ -1,0 +1,19 @@
+.cabecera{
+    border:1px solid #999999;
+    background: blue;
+    color: white;
+}
+body{
+    text-align: left;
+    width: 600px;
+    margin: auto;
+    border: 1px solid black;
+    display: block;
+}
+h1{
+    text-align:center;
+}
+div{
+    background: #fffbb9;
+    padding: 10px 20px;
+}
