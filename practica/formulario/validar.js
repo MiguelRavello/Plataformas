@@ -3,7 +3,7 @@ function validar() {
     var expLetras, expNumero, expCorreo;
     expLetras = /^[a-zA-Z]+(\s+[a-zA-Z]+)*$/;
     expNumero = /^\d{6}$|^\d{9}$/;
-    expCorreo = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3}$/;
+    expCorreo = /^[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/;
 
     name = document.getElementById("nombre").value;
     lastname = document.getElementById("apellidos").value;
